@@ -1,4 +1,4 @@
 /trains-internal
 clearml
-gradio
+gradio==3.16.2
 torch
