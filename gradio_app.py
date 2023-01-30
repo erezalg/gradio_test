@@ -20,7 +20,6 @@ def predict(inp):
 demo = gr.Interface(fn=predict,
                     inputs=gr.inputs.Image(type="pil"),
                     outputs=gr.outputs.Label(num_top_classes=3),
-                    examples=[["https://www.shutterstock.com/image-photo/surreal-image-african-elephant-wearing-260nw-1365289022.jpg"]],
                     )
 
 demo.launch()
