@@ -16,7 +16,7 @@ def predict(inp):
         confidences = {labels[i]: float(prediction[i]) for i in range(1000)}
     return confidences
 
-
+Task.init(project_name='test gradio',task_name='test advanced gradio')
 demo = gr.Interface(fn=predict,
                     inputs=gr.inputs.Image(type="pil"),
                     outputs=gr.outputs.Label(num_top_classes=3),
