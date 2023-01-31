@@ -2,3 +2,4 @@
 clearml
 gradio==3.16.2
 torch
+torchvision
